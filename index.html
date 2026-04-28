@@ -4,15 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>乔迁喜宴 · 邀请函</title>
+<!-- Open Graph for rich preview in WeChat and social apps -->
+<meta property="og:title" content="乔迁之喜 · 家宴如意 🏮" />
+<meta property="og:description" content="2026年5月16日 · 平潭 · 十六道好菜宴亲朋" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://gist.githubusercontent.com/yidaart/6bce632513108b1be454833a7a8c4e65/raw/qiaoxi_invite.png" />
+<meta property="og:url" content="https://yidaart.github.io/qiaoxi-invite/" />
+<meta name="description" content="2026年5月16日 · 平潭 · 十六道好菜宴亲朋" />
 <style>
 @font-face {font-family:'TsangerJinKai';src:url('file:///Users/klouis/.openclaw/workspace/skills/qiaomu-info-card-designer/assets/TsangerJinKai02-W04.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block;}
-@font-face {font-family:'TsangerJinKai';src:url('file:///Users/klouis/.openclaw/workspace/skills/qiaomu-info-card-designer/assets/TsangerJinKai02-W04.ttf') format('truetype');font-weight:700;font-style:normal;font-display:block;}
-
 * {margin:0;padding:0;box-sizing:border-box;}
 html, body {width:100%;min-height:100vh;background:#1a0a0a;overflow-x:hidden;}
 body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
 
-/* 背景纹理 */
 .bg-pattern {
   position:fixed;inset:0;
   background:
@@ -23,7 +27,6 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
   pointer-events:none;z-index:0;
 }
 
-/* 金粉粒子 */
 .particles {
   position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1;
 }
@@ -51,143 +54,48 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
   padding:40px 24px 60px;min-height:100vh;
 }
 
-/* 顶部纹饰 */
-.top-ornament {
-  text-align:center;padding:20px 0 30px;
-  position:relative;
-}
-.top-ornament::before,
-.top-ornament::after {
+.top-ornament {text-align:center;padding:20px 0 30px;position:relative;}
+.top-ornament::before,.top-ornament::after {
   content:'◆';position:absolute;top:50%;transform:translateY(-50%);
   color:rgba(212,175,55,0.3);font-size:10px;
 }
 .top-ornament::before {left:30%;}
 .top-ornament::after {right:30%;}
 
-/* 主标题区 */
-.hero {
-  text-align:center;padding:20px 0 32px;
-  position:relative;
-}
-.hero-icon {font-size:48px;display:block;margin-bottom:16px;filter:grayscale(0.3);}
+.hero {text-align:center;padding:20px 0 32px;position:relative;}
+.hero-icon {font-size:48px;display:block;margin-bottom:16px;}
 .hero h1 {
   font-size:38px;font-weight:700;color:#f0d8b0;
   letter-spacing:0.15em;line-height:1.4;
   text-shadow:0 2px 20px rgba(212,175,55,0.2);
 }
-.hero .sub {
-  font-size:14px;color:rgba(240,216,176,0.5);
-  letter-spacing:0.3em;margin-top:12px;
-}
+.hero .sub {font-size:14px;color:rgba(240,216,176,0.5);letter-spacing:0.3em;margin-top:12px;}
+.divider {width:80px;height:1px;margin:24px auto;background:linear-gradient(90deg,transparent,rgba(212,175,55,0.6),transparent);}
+.divider-thick {width:140px;height:2px;margin:28px auto;background:linear-gradient(90deg,transparent,rgba(212,175,55,0.5),transparent);}
 
-/* 金色分割线 */
-.divider {
-  width:80px;height:1px;margin:24px auto;
-  background:linear-gradient(90deg,transparent, rgba(212,175,55,0.6),transparent);
-}
-.divider-thick {
-  width:140px;height:2px;margin:28px auto;
-  background:linear-gradient(90deg,transparent,rgba(212,175,55,0.5),transparent);
-}
+.info-block {text-align:center;padding:4px 0;}
+.info-block .date {font-size:30px;color:#f0d8b0;letter-spacing:0.15em;font-weight:700;}
+.info-block .date-lunar {font-size:13px;color:rgba(212,175,55,0.5);margin-top:4px;letter-spacing:0.2em;}
+.info-block .loc {font-size:16px;color:rgba(240,216,176,0.7);margin-top:20px;letter-spacing:0.15em;}
+.info-block .loc span {display:inline-block;padding:6px 20px;border:1px solid rgba(212,175,55,0.25);border-radius:20px;font-size:14px;}
+.invite-text {text-align:center;padding:12px 0;font-size:14px;color:rgba(240,216,176,0.45);line-height:2;letter-spacing:0.1em;}
 
-/* 正文信息 */
-.info-block {
-  text-align:center;padding:4px 0;
-}
-.info-block .date {
-  font-size:30px;color:#f0d8b0;letter-spacing:0.15em;
-  font-weight:700;
-}
-.info-block .date-lunar {
-  font-size:13px;color:rgba(212,175,55,0.5);margin-top:4px;
-  letter-spacing:0.2em;
-}
-.info-block .loc {
-  font-size:16px;color:rgba(240,216,176,0.7);margin-top:20px;
-  letter-spacing:0.15em;
-}
-.info-block .loc span {
-  display:inline-block;padding:6px 20px;
-  border:1px solid rgba(212,175,55,0.25);
-  border-radius:20px;font-size:14px;
-}
-
-/* 邀请语 */
-.invite-text {
-  text-align:center;padding:12px 0;
-  font-size:14px;color:rgba(240,216,176,0.45);
-  line-height:2;letter-spacing:0.1em;
-}
-
-/* 菜单区 */
-.menu-section {
-  padding:8px 0;
-}
-.menu-section .section-title {
-  text-align:center;font-size:16px;color:rgba(212,175,55,0.6);
-  letter-spacing:0.2em;padding:16px 0 8px;
-  position:relative;
-}
-.menu-section .section-title::before,
-.menu-section .section-title::after {
-  content:'—';color:rgba(212,175,55,0.2);margin:0 12px;
-}
-
-.dish {
-  display:flex;justify-content:space-between;align-items:baseline;
-  padding:8px 4px;
-  border-bottom:1px solid rgba(212,175,55,0.06);
-}
+.menu-section {padding:8px 0;}
+.menu-section .section-title {text-align:center;font-size:16px;color:rgba(212,175,55,0.6);letter-spacing:0.2em;padding:16px 0 8px;position:relative;}
+.menu-section .section-title::before,.menu-section .section-title::after {content:'—';color:rgba(212,175,55,0.2);margin:0 12px;}
+.dish {display:flex;justify-content:space-between;align-items:baseline;padding:8px 4px;border-bottom:1px solid rgba(212,175,55,0.06);}
 .dish:last-child {border-bottom:none;}
-.dish .name {
-  font-size:15px;color:rgba(240,216,176,0.8);
-  letter-spacing:0.05em;
-}
-.dish .name .wish {
-  font-size:12px;color:rgba(212,175,55,0.35);
-  margin-right:6px;
-}
-.dish .detail {
-  font-size:12px;color:rgba(240,216,176,0.3);
-  white-space:nowrap;
-}
+.dish .name {font-size:15px;color:rgba(240,216,176,0.8);letter-spacing:0.05em;}
+.dish .name .wish {font-size:12px;color:rgba(212,175,55,0.35);margin-right:6px;}
+.dish .detail {font-size:12px;color:rgba(240,216,176,0.3);white-space:nowrap;}
 
-/* 底部 */
-.footer-area {
-  text-align:center;padding:24px 0 0;
-  margin-top:8px;
-}
-.footer-area .blessing {
-  font-size:14px;color:rgba(212,175,55,0.35);
-  letter-spacing:0.2em;line-height:2;
-}
-.footer-area .big {
-  font-size:19px;color:rgba(212,175,55,0.5);
-  letter-spacing:0.25em;margin-top:8px;
-}
-
-/* 底部纹饰 */
-.bottom-ornament {
-  text-align:center;padding:32px 0 10px;
-  color:rgba(212,175,55,0.15);font-size:20px;
-  letter-spacing:0.5em;
-}
-
-/* 打开动画 */
-@keyframes fadeInUp {
-  from {opacity:0;transform:translateY(20px);}
-  to {opacity:1;transform:translateY(0);}
-}
-.animate {animation:fadeInUp 0.8s ease-out both;}
-.animate-d1 {animation-delay:0.1s;}
-.animate-d2 {animation-delay:0.3s;}
-.animate-d3 {animation-delay:0.5s;}
-.animate-d4 {animation-delay:0.7s;}
-.animate-d5 {animation-delay:0.9s;}
+.footer-area {text-align:center;padding:24px 0 0;margin-top:8px;}
+.footer-area .blessing {font-size:14px;color:rgba(212,175,55,0.35);letter-spacing:0.2em;line-height:2;}
+.footer-area .big {font-size:19px;color:rgba(212,175,55,0.5);letter-spacing:0.25em;margin-top:8px;}
+.bottom-ornament {text-align:center;padding:32px 0 10px;color:rgba(212,175,55,0.15);font-size:20px;letter-spacing:0.5em;}
 </style>
 </head>
 <body>
-
 <div class="bg-pattern"></div>
 <div class="particles">
   <span class="particle"></span><span class="particle"></span>
@@ -195,48 +103,19 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
   <span class="particle"></span><span class="particle"></span>
   <span class="particle"></span><span class="particle"></span>
 </div>
-
 <div class="container">
-
-  <!-- 顶部 -->
-  <div class="top-ornament animate animate-d1">
-    <span style="font-size:12px;color:rgba(212,175,55,0.2);letter-spacing:0.5em;">✦ ✦ ✦</span>
-  </div>
-
-  <!-- 主标题 -->
-  <div class="hero animate animate-d2">
-    <div class="hero-icon">🏮</div>
-    <h1>乔迁之喜</h1>
-    <div class="sub">— 幸得一室 · 以安身心 —</div>
-  </div>
-
+  <div class="top-ornament"><span style="font-size:12px;color:rgba(212,175,55,0.2);letter-spacing:0.5em;">✦ ✦ ✦</span></div>
+  <div class="hero"><div class="hero-icon">🏮</div><h1>乔迁之喜</h1><div class="sub">— 幸得一室 · 以安身心 —</div></div>
   <div class="divider-thick"></div>
-
-  <!-- 日期 -->
-  <div class="info-block animate animate-d3">
-    <div class="date">五月十六</div>
-    <div class="date-lunar">2026年5月16日 · 星期六</div>
-  </div>
-
-  <!-- 地点+邀请 -->
-  <div class="info-block animate animate-d3">
-    <div class="loc"><span>📍 平潭 · 新居</span></div>
-  </div>
-
-  <div class="invite-text animate animate-d3">
-    谨备薄宴 · 邀君同庆<br>
-    聊备小菜 · 把酒言欢
-  </div>
-
+  <div class="info-block"><div class="date">五月十六</div><div class="date-lunar">2026年5月16日 · 星期六</div></div>
+  <div class="info-block"><div class="loc"><span>📍 平潭 · 新居</span></div></div>
+  <div class="invite-text">谨备薄宴 · 邀君同庆<br>聊备小菜 · 把酒言欢</div>
   <div class="divider"></div>
 
-  <!-- 菜单 -->
-  <div class="menu-section animate animate-d4">
-
+  <div class="menu-section">
     <div class="section-title">开胃迎宾</div>
     <div class="dish"><span class="name"><span class="wish">鸿运当头</span>凉拌牛腱子</span><span class="detail">🥩</span></div>
     <div class="dish"><span class="name"><span class="wish">花开富贵</span>捞汁花螺</span><span class="detail">🐚</span></div>
-
     <div class="section-title" style="margin-top:12px;">硬菜登场</div>
     <div class="dish"><span class="name"><span class="wish">红红火火</span>蒜蓉蒸小青龙</span><span class="detail">🦞</span></div>
     <div class="dish"><span class="name"><span class="wish">富贵满堂</span>山药焗花蟹</span><span class="detail">🦀</span></div>
@@ -246,31 +125,23 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
     <div class="dish"><span class="name"><span class="wish">节节高升</span>油焖大虾</span><span class="detail">🦐</span></div>
     <div class="dish"><span class="name"><span class="wish">大吉大利</span>桑拿鸡</span><span class="detail">🐔</span></div>
     <div class="dish"><span class="name"><span class="wish">蒸蒸日上</span>粉蒸排骨</span><span class="detail">🏆</span></div>
-
     <div class="section-title" style="margin-top:12px;">锦上添花</div>
     <div class="dish"><span class="name"><span class="wish">阖家欢乐</span>奥尔良鸡翅煲</span><span class="detail">🍗</span></div>
     <div class="dish"><span class="name"><span class="wish">和和美美</span>娃娃菜炒火腿肠</span><span class="detail">🥬</span></div>
     <div class="dish"><span class="name"><span class="wish">金玉满堂</span>厚切炸猪排</span><span class="detail">🥇</span></div>
     <div class="dish"><span class="name"><span class="wish">喜庆团圆</span>派对炸鸡组合</span><span class="detail">🎉</span></div>
-
     <div class="section-title" style="margin-top:12px;">圆满收尾</div>
     <div class="dish"><span class="name"><span class="wish">福气满满</span>白萝卜炖牛排汤</span><span class="detail">🥣</span></div>
     <div class="dish"><span class="name"><span class="wish">团团圆圆</span>米酒小汤圆</span><span class="detail">🍡</span></div>
-
   </div>
 
   <div class="divider-thick"></div>
-
-  <!-- 底部祝福 -->
-  <div class="footer-area animate animate-d5">
+  <div class="footer-area">
     <div class="blessing">满桌好菜皆是彩头</div>
     <div class="blessing">往后日子步步生花</div>
     <div class="big">🏠 恭候光临 🏠</div>
   </div>
-
-  <div class="bottom-ornament animate animate-d5">✦ ✦ ✦ ✦ ✦</div>
-
+  <div class="bottom-ornament">✦ ✦ ✦ ✦ ✦</div>
 </div>
-
 </body>
 </html>
