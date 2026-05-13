@@ -11,11 +11,11 @@
 <meta property="og:image" content="https://gist.githubusercontent.com/yidaart/6bce632513108b1be454833a7a8c4e65/raw/qiaoxi_invite.png" />
 <meta property="og:url" content="https://yidaart.github.io/qiaoxi-invite/" />
 <meta name="description" content="2026年5月16日 · 平潭 · 十六道好菜宴亲朋" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-@font-face {font-family:'TsangerJinKai';src:url('file:///Users/klouis/.openclaw/workspace/skills/qiaomu-info-card-designer/assets/TsangerJinKai02-W04.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block;}
 * {margin:0;padding:0;box-sizing:border-box;}
 html, body {width:100%;min-height:100vh;background:#1a0a0a;overflow-x:hidden;}
-body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
+body {font-family:'Noto Serif SC','PingFang SC','Hiragino Sans GB',serif;}
 
 .bg-pattern {
   position:fixed;inset:0;
@@ -78,7 +78,7 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
 .info-block .date-lunar {font-size:13px;color:rgba(212,175,55,0.5);margin-top:4px;letter-spacing:0.2em;}
 .info-block .loc {font-size:16px;color:rgba(240,216,176,0.7);margin-top:20px;letter-spacing:0.15em;}
 .info-block .loc span {display:inline-block;padding:6px 20px;border:1px solid rgba(212,175,55,0.25);border-radius:20px;font-size:14px;}
-.invite-text {text-align:center;padding:12px 0;font-size:14px;color:rgba(240,216,176,0.45);line-height:2;letter-spacing:0.1em;}
+.invite-text {text-align:center;padding:12px 0;font-size:14px;color:rgba(240,216,176,0.45);line-height:2;letter-spacing:0.04em;}
 
 .menu-section {padding:8px 0;}
 .menu-section .section-title {text-align:center;font-size:16px;color:rgba(212,175,55,0.6);letter-spacing:0.2em;padding:16px 0 8px;position:relative;}
@@ -93,6 +93,9 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
 .footer-area .blessing {font-size:14px;color:rgba(212,175,55,0.35);letter-spacing:0.2em;line-height:2;}
 .footer-area .big {font-size:19px;color:rgba(212,175,55,0.5);letter-spacing:0.25em;margin-top:8px;}
 .bottom-ornament {text-align:center;padding:32px 0 10px;color:rgba(212,175,55,0.15);font-size:20px;letter-spacing:0.5em;}
+.share-btn {display:block;margin:0 auto 20px;padding:10px 28px;background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.25);border-radius:24px;color:rgba(240,216,176,0.7);font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:0.15em;transition:all 0.2s;}
+.share-btn:hover {background:rgba(212,175,55,0.2);border-color:rgba(212,175,55,0.45);color:#f0d8b0;}
+@media (min-width: 720px) {.container {padding:60px 24px 80px;}}
 </style>
 </head>
 <body>
@@ -141,6 +144,7 @@ body {font-family:'TsangerJinKai','PingFang SC','Hiragino Sans GB',serif;}
     <div class="blessing">往后日子步步生花</div>
     <div class="big">🏠 恭候光临 🏠</div>
   </div>
+  <button class="share-btn" onclick="navigator.share({title:'乔迁之喜·家宴如意',text:'2026年5月16日·平潭·十六道好菜宴亲朋',url:location.href}).catch(()=>{})">📤 转发邀请</button>
   <div class="bottom-ornament">✦ ✦ ✦ ✦ ✦</div>
 </div>
 </body>
